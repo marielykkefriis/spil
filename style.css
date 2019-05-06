@@ -1,0 +1,836 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.5vw;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+#game_background {
+    position: absolute;
+    top: 0;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url(produktioner_faerdige/baggrundmur.svg);
+    background-repeat: no-repeat;
+
+}
+
+
+/*GAME ELEMENTS*/
+
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
+
+}
+
+#gin_container {
+    position: absolute;
+
+}
+
+#gin_sprite {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/ginmedansigt.svg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.fallinggin1 {
+    animation-name: fallinggin1_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes fallinggin1_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(-60deg);
+    }
+
+    100% {
+        transform: translateY(70vw);
+    }
+
+
+}
+
+.position0 {
+    left: 47vw;
+    top: 22vw;
+}
+
+#gin_container1 {
+    position: absolute;
+
+}
+
+#gin_sprite1 {
+    width: 10vw;
+    height: 15.3vw;
+    background-image: url(produktioner_faerdige/ginmedansigt.svg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.fallinggin2 {
+    animation-name: fallinggin2_kf;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fallinggin2_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(110deg);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+
+
+}
+
+.position1 {
+    top: 5vw;
+    left: 20vw;
+}
+
+#tonic_container {
+    position: absolute;
+
+
+
+}
+
+#tonic_sprite {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/tonicfigur.svg);
+    background-size: 100%;
+    overflow: hidden;
+
+}
+
+.fallingtonic1 {
+    animation-name: fallingtonic1_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fallingtonic1_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(30deg);
+    }
+
+    100% {
+        transform: translateY(55vw);
+    }
+
+
+}
+
+.position2 {
+    top: 10vw;
+    left: 80vw;
+}
+
+#rom_container {
+    position: absolute;
+
+}
+
+#rom_sprite {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/rommedansigt.svg);
+    background-size: 100%;
+    transform: rotate(10deg);
+    overflow: hidden;
+}
+
+.fallingrom {
+    animation-name: fallingrom_kf;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fallingrom_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(35deg);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+
+
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.position4 {
+    top: 8vw;
+    left: 40vw;
+}
+
+#rom_container1 {
+    position: absolute;
+
+}
+
+#rom_sprite1 {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/rommedansigt.svg);
+    background-size: 100%;
+    transform: rotate(10deg);
+    overflow: hidden;
+}
+
+.fallingrom2 {
+    animation-name: fallingrom2_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fallingrom2_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+
+
+}
+
+.position5 {
+    top: 8vw;
+    left: 28vw;
+}
+
+
+
+#cola_container {
+    position: absolute;
+
+}
+
+#cola_sprite {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/colamedansigt.svg);
+    background-size: 100%;
+    transform: rotate(40deg);
+    overflow: hidden;
+}
+
+.fallingcola {
+    animation-name: fallingcola_kf;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fallingcola_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(-30deg);
+    }
+
+    100% {
+        transform: translateY(55vw);
+    }
+
+
+}
+
+.position6 {
+    top: 15vw;
+    left: 50vw;
+}
+
+#cola_container2 {
+    position: absolute;
+
+}
+
+#cola_sprite2 {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/colamedansigt.svg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.fallingcola2 {
+    animation-name: fallingcola2_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fallingcola2_kf {
+
+    0% {
+        transform: translateY(-40vw)rotate(45deg);
+    }
+
+    100% {
+        transform: translateY(55vw);
+    }
+
+
+}
+
+.position7 {
+    top: 10vw;
+    left: 5vw;
+}
+
+#citron_container {
+    position: absolute;
+    left: 78vw;
+    top: 0vw;
+    overflow: hidden;
+
+}
+
+#citron_sprite {
+    width: 10vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/citron.svg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.fallingcitron {
+    animation-name: fallingcitron_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+
+}
+
+@keyframes fallingcitron_kf {
+
+    0% {
+        transform: translateY(-20vw)rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(55vw)rotate(360deg);
+    }
+
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+/*GAME UI*/
+
+
+#game_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+#liv1 {
+    background-image: url(produktioner_faerdige/ekstraliv1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 5.5vw;
+    top: 2vw;
+    left: 2vw;
+}
+
+#liv2 {
+    background-image: url(produktioner_faerdige/ekstraliv1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 5.5vw;
+    top: 9vw;
+    left: 2vw;
+}
+
+#liv3 {
+    background-image: url(produktioner_faerdige/ekstraliv1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 5.5vw;
+    top: 16vw;
+    left: 2vw;
+}
+
+.grey {
+    filter: grayscale(80%);
+}
+
+.disappear {
+    animation-name: disappear_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes disappear_kf {
+    100% {
+        transform: scale(0);
+    }
+
+    45% {
+        transform: scale(1.5)
+    }
+
+
+    0% {
+        transform: scale(1)
+    }
+}
+
+.fade_out2 {
+    animation-name: fade_out2_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+@keyframes fade_out2_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade_out3 {
+    animation-name: fade_out3_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+@keyframes fade_out3_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#time_board {
+    background-image: url(produktioner_faerdige/urviser.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 2.8vw;
+    top: 4.6vw;
+    left: 48.5vw;
+
+}
+
+
+#time_board2 {
+    background-image: url(produktioner_faerdige/storeviser.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 2.8vw;
+    top: 4.1vw;
+    left: 48.5vw;
+    pointer-events: none;
+
+}
+
+
+.rotation {
+    animation-name: rotation_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes rotation_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#score_board {
+    position: absolute;
+    font-family: sans-serif;
+    top: 22vw;
+    left: 95.9vw;
+    background-size: 100%;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+#barometer {
+    background-image: url(produktioner_faerdige/barometer.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 20vw;
+    top: 1vw;
+    left: 95vw;
+}
+
+#flydende {
+    background-image: url(produktioner_faerdige/flydende.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3vw;
+    height: 19.1vw;
+    top: 1vw;
+    left: 94.93vw;
+}
+
+.tid {
+    animation-name: tid_kf;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+}
+
+@keyframes tid_kf {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+
+
+
+
+/*Start*/
+
+
+#start {
+    width: 100%;
+    height: 100%;
+    background-image: url(produktioner_faerdige/titelsk%C3%A6rmuknap.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+
+
+}
+
+
+
+
+/*UI ELEMENTS*/
+
+#ui_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#settingknap_container {
+    position: absolute;
+    top: 47vw;
+    left: 90vw;
+}
+
+#settingknap_sprite {
+    background-image: url(produktioner_faerdige/settings.svg);
+    background-size: 100%;
+    width: 5.5vw;
+    height: 5.5vw;
+}
+
+.drej {
+    animation-name: drej_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes drej_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+    0% {
+        transform: rotate(0deg);
+    }
+}
+
+#startknap {
+    position: absolute;
+    top: 38vw;
+    left: 4vw;
+    width: 30vw;
+    height: 25vw;
+    background-image: url(produktioner_faerdige/startknap.svg);
+    background-size: 100%;
+}
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+    to {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.1);
+    }
+}
+
+/*Game over*/
+
+#gameover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(produktioner_faerdige/game%20overuknap.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#your_score1 {
+
+    position: absolute;
+    font-size: 5rem;
+    font-family: sans-serif;
+    color: #3E662F;
+    top: 33.9vw;
+    left: 17.7vw;
+}
+
+
+/*UI ELEMENTS*/
+
+#videreknap {
+    position: absolute;
+    top: 22vw;
+    left: 20vw;
+    width: 19.8vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/videreknap%20gr%C3%B8n.svg);
+    background-size: 100%;
+}
+
+
+.pulse1 {
+    animation-name: pulse1_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse1_kf {
+    to {
+        transform: scale(0.7);
+    }
+
+    from {
+        transform: scale(0.8);
+    }
+}
+
+/*Level complete*/
+
+
+
+#levelcomplete {
+    position: absolute;
+    background-image: url(produktioner_faerdige/levelcompleteuknap.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+#your_score2 {
+    position: absolute;
+    font-size: 5rem;
+    font-family: sans-serif;
+    color: #EA35EF;
+    top: 37.5vw;
+    left: 15vw;
+}
+
+
+#regler {
+    background-image: url(produktioner_faerdige/baggrund%20med%20forklaring.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+#videreknapregler {
+    background-image: url(produktioner_faerdige/videreknaporange.svg);
+    position: absolute;
+    top: 37vw;
+    left: 70vw;
+    width: 15vw;
+    height: 11.4vw;
+    background-size: 100%;
+}
+
+/*UI ELEMENTS*/
+
+#videreknap1 {
+    position: absolute;
+    top: 30vw;
+    left: 38vw;
+    width: 19.8vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/videreknappink.svg);
+    background-size: 100%;
+}
+
+.pulse1 {
+    animation-name: pulse1_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse1_kf {
+    to {
+        transform: scale(0.7);
+    }
+
+    from {
+        transform: scale(0.8);
+    }
+}
+
+#finalpoint {
+    position: absolute;
+    top: 28vw;
+    left: 8vw;
+    width: 22vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/finalpoint1.svg);
+    background-size: 100%;
+
+}
+
+#finalpoint2 {
+    position: absolute;
+    top: 33vw;
+    left: 8vw;
+    width: 19.8vw;
+    height: 15vw;
+    background-image: url(produktioner_faerdige/finalpoint2.svg);
+    background-size: 100%;
+}

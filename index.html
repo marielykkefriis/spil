@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gin & Tonic 4-life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background">
+            </div>
+            <div id="game_elements">
+                <div id="time_board"></div>
+                <div id="time_board2" class="rotation">
+                </div>
+                <div id="gin_container" class="gin position0">
+                    <div id="gin_sprite" class="gin_sprite"> </div>
+                </div>
+                <div id="gin_container1" class="gin position1">
+                    <div id="gin_sprite1" class="gin_sprite"></div>
+                </div>
+                <div id="tonic_container" class="tonic position3">
+                    <div id="tonic_sprite" class="gin_sprite"></div>
+                </div>
+                <div id="tonic_container1" class="tonic position4">
+                    <div id="tonic_sprite1" class="gin_sprite"></div>
+                </div>
+                <div id="rom_container" class="rom position5">
+                    <div id="rom_sprite" class="rom_sprite"></div>
+                </div>
+                <div id="rom_container1" class="rom position6">
+                    <div id="rom_sprite1" class="rom_sprite"></div>
+                </div>
+                <div id="cola_container" class="cola position7">
+                    <div id="cola_sprite" class="rom_sprite"></div>
+                </div>
+                <div id="cola_container2" class="cola position8">
+                    <div id="cola_sprite2" class="rom_sprite"></div>
+                </div>
+                <div id="citron_container" class="citron position9">
+                    <div id="citron_sprite" class="citron_sprite"></div>
+                </div>
+            </div>
+            <div id="game_ui">
+                <div id="score_board">
+                    <span class="antal">0</span>
+                </div>
+                <div id="energy_board1">
+                    <div id="liv1" class="glas"></div>
+                    <div id="liv2" class="glas"></div>
+                    <div id="liv3" class="glas"></div>
+                </div>
+
+                <div id="timer">
+                    <div id="barometer"></div>
+                    <div id="flydende" class="tid"></div>
+                </div>
+            </div>
+        </div>
+        <div id="start" class="hide">
+            <div id="ui_elements1">
+                <div id="startknap" class="pulse">
+                </div>
+                <div id="settingknap_container">
+                    <div id="settingknap_sprite" class="drej"></div>
+                </div>
+            </div>
+        </div>
+        <div id="regler" class="hide">
+            <div id="videreknapregler" class="pulse">
+            </div>
+        </div>
+        <div id="gameover" class="hide">
+            <div id="ui_elements2">
+                <div id="finalpoint">
+                </div>
+                <div id="your_score1">
+                    <p></p>
+                </div>
+                <div id="videreknap" class="pulse1">
+                </div>
+            </div>
+        </div>
+        <div id="levelcomplete" class="hide">
+            <div id="ui_elements3">
+                <div id="finalpoint2">
+                </div>
+                <div id="your_score2">
+                    <p></p>
+                </div>
+                <div id="videreknap1" class="pulse1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sound">
+        <audio src="lyd/baggrundsmusik.mp3" id="sound_baggrundsmusik"></audio>
+        <audio src="lyd/daase.mp3" id="sound_dåse" controls></audio>
+        <audio src="lyd/haeldelyd2.mp3" id="sound_hælde" controls></audio>
+        <audio src="lyd/ikke%20rom%20og%20cola.mp3" id="sound_romogcola" controls></audio>
+        <audio src="lyd/ad.mp3" id="sound_ad" controls></audio>
+        <audio src="lyd/citron.mp3" id="sound_citron" controls></audio>
+        <audio src="lyd/congratulation.mp3" id="sound_levelcomplete"></audio>
+        <audio src="lyd/wuhuu.mp3" id="sound_wuhu"></audio>
+        <audio src="lyd/klik.mp3" id="sound_klik"></audio>
+        <audio src="lyd/bou.mp3" id="sound_gameover"></audio>
+        <audio src="lyd/buuuu.mp3" id="sound_buuu"></audio>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
